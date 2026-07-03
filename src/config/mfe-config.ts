@@ -1,14 +1,14 @@
-import type { HomeMfeConfig } from '@your-org/mfe-home';
-import type { ProductsMfeConfig } from '@your-org/mfe-products';
+import type { CoreConfig } from '@your-org/core';
 
-export const mfeConfig: {
-  home: HomeMfeConfig;
-  products: ProductsMfeConfig;
-} = {
+export const mfeConfig: CoreConfig = {
+  tabs: {
+    home: 'Trang chủ',
+    products: 'Sản phẩm',
+  },
   home: {
     headerTitle: 'Trang chủ',
     title: 'Ứng dụng của tôi',
-    subtitle: 'Micro-frontend cài từ npm package — customize qua config.',
+    subtitle: 'Cài @your-org/core — customize qua CoreProvider.',
     buttonLabel: 'Bắt đầu ngay',
     onAction: () => alert('Home action từ consumer app!'),
   },

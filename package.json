@@ -5,18 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:home": "VITE_CORE_APPS=home vite --open /home",
+    "dev:products": "VITE_CORE_APPS=products vite --open /products",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit",
-    "bootstrap": "cd ../ionic-mfe-turbo && pnpm install && pnpm publish:local && cd ../my-ionic-app && pnpm install"
+    "bootstrap": "cd ../ionic-mfe-turbo && pnpm install && pnpm publish:local && cd ../my-ionic-app && pnpm install",
+    "sync": "cd ../ionic-mfe-turbo && pnpm publish:local && cd ../my-ionic-app && pnpm install"
   },
   "dependencies": {
     "@ionic/react": "^8.5.0",
     "@ionic/react-router": "^8.5.0",
-    "@your-org/mfe-home": "^0.1.1",
-    "@your-org/mfe-products": "^0.1.1",
-    "@your-org/types": "^0.1.1",
-    "@your-org/ui": "^0.1.1",
+    "@your-org/core": "^0.1.4",
     "ionicons": "^7.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

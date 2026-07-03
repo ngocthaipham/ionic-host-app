@@ -1,36 +1,34 @@
-# My Ionic App (Host)
+# My Ionic App (Demo Consumer)
 
-Consumer app that installs MFE packages from `ionic-mfe-turbo` and customizes them via config + theme.
+Thin demo app — installs `@your-org/core` from `ionic-mfe-turbo` and customizes via `CoreProvider` + config.
 
 ## Quick start
 
 **Full guide:** [docs/LOCAL_SETUP.md](./docs/LOCAL_SETUP.md)
 
 ```bash
-# First time (builds sibling MFE packages + installs deps)
-pnpm bootstrap
-
-# Run host app → http://localhost:3000
-pnpm dev
+pnpm bootstrap   # build sibling monorepo + install
+pnpm dev         # http://localhost:3000
 ```
 
-Both repos must sit side by side:
+Sibling layout:
 
 ```
-../ionic-mfe-turbo/
-my-ionic-app/   ← you are here
+../ionic-mfe-turbo/   ← packages/ + apps/ (source)
+my-ionic-app/         ← you are here (demo consumer)
 ```
 
 ## Customize
 
-- **Props / labels** — `src/config/mfe-config.ts`
-- **Brand theme** — `src/theme/brand.css`
-- **MFE components** — edit source in `../ionic-mfe-turbo/packages/`
+- **Props / labels / tabs / products** — `src/config/mfe-config.ts` → `CoreProvider`
+- **Brand theme** — `src/theme/brand.css` or `CoreProvider theme`
+- **Platform source** — `../ionic-mfe-turbo/apps/` and `packages/`
 
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
-| `pnpm bootstrap` | Install + build MFE packages, then install host deps |
-| `pnpm dev` | Start host app on port 3000 |
+| `pnpm bootstrap` | Install + build + publish monorepo, then install demo deps from Verdaccio |
+| `pnpm sync` | Re-publish monorepo + reinstall demo deps (after editing `@your-org/*`) |
+| `pnpm dev` | Start demo app on port 3000 |
 | `pnpm build` | Production build |

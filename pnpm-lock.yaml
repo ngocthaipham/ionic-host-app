@@ -14,18 +14,9 @@ importers:
       '@ionic/react-router':
         specifier: ^8.5.0
         version: 8.8.12(react-dom@18.3.1(react@18.3.1))(react-router-dom@5.3.4(react@18.3.1))(react-router@5.3.4(react@18.3.1))(react@18.3.1)
-      '@your-org/mfe-home':
-        specifier: ^0.1.1
-        version: 0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@your-org/mfe-products':
-        specifier: ^0.1.1
-        version: 0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/types@0.1.1)(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@your-org/types':
-        specifier: ^0.1.1
-        version: 0.1.1
-      '@your-org/ui':
-        specifier: ^0.1.1
-        version: 0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      '@your-org/core':
+        specifier: ^0.1.4
+        version: 0.1.4(@ionic/react-router@8.8.12(react-dom@18.3.1(react@18.3.1))(react-router-dom@5.3.4(react@18.3.1))(react-router@5.3.4(react@18.3.1))(react@18.3.1))(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/types@0.1.1)(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(ionicons@7.4.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@5.3.4(react@18.3.1))(react@18.3.1)
       ionicons:
         specifier: ^7.4.0
         version: 7.4.0
@@ -551,16 +542,26 @@ packages:
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
 
-  '@your-org/mfe-home@0.1.1':
-    resolution: {integrity: sha512-feHPp9KPbXXjuU5yQMOI+fYCK3uiW8JxWfcl6GHnAc/paN8rXmqCdq/UKpmf+xu7TCeFA9DJIHtTWohJX3hUDQ==}
+  '@your-org/core@0.1.4':
+    resolution: {integrity: sha512-j+iJh9rlF9y1prrB5/Z4H8bfiumQP6cmbcH98ZzzRai569QTvd9+eeP9qmAalg2SbMui5EyWyiDzN3pcCpO4nw==}
+    peerDependencies:
+      '@ionic/react': ^8.5.0
+      '@ionic/react-router': ^8.5.0
+      ionicons: ^7.4.0
+      react: ^18.3.1
+      react-dom: ^18.3.1
+      react-router-dom: ^5.3.4
+
+  '@your-org/home@0.1.1':
+    resolution: {integrity: sha512-vWuU74YWjJH1vgp2VrQmCOQOyKVPJe0ZGA8t7fV2q7dlpqzPsnnRY/Ady46/qfexPkXPSjJPWeWVq7SyctQQiQ==}
     peerDependencies:
       '@ionic/react': ^8.5.0
       '@your-org/ui': ^0.1.1
       react: ^18.3.1
       react-dom: ^18.3.1
 
-  '@your-org/mfe-products@0.1.1':
-    resolution: {integrity: sha512-fJ7tDBYPiO3xufIw4E/0cIdxtmTamoMDPvUIHYuZku6MefdYIIkX0ZXG30JH6o7IVVpJ0Fy0d2srHo7iSH4k6g==}
+  '@your-org/products@0.1.1':
+    resolution: {integrity: sha512-8/tGZBsG7zxFvJr2v+Scbm/NtUc7P6KOAfeWsGbg8ncK8sYlMxjAFqo1c+gcc4MfgFlZ/+2RjXboFAJabnwmoA==}
     peerDependencies:
       '@ionic/react': ^8.5.0
       '@your-org/types': ^0.1.1
@@ -1225,14 +1226,28 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@your-org/mfe-home@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@your-org/core@0.1.4(@ionic/react-router@8.8.12(react-dom@18.3.1(react@18.3.1))(react-router-dom@5.3.4(react@18.3.1))(react-router@5.3.4(react@18.3.1))(react@18.3.1))(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/types@0.1.1)(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(ionicons@7.4.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@5.3.4(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@ionic/react': 8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@ionic/react-router': 8.8.12(react-dom@18.3.1(react@18.3.1))(react-router-dom@5.3.4(react@18.3.1))(react-router@5.3.4(react@18.3.1))(react@18.3.1)
+      '@your-org/home': 0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@your-org/products': 0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/types@0.1.1)(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      ionicons: 7.4.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-router-dom: 5.3.4(react@18.3.1)
+    transitivePeerDependencies:
+      - '@your-org/types'
+      - '@your-org/ui'
+
+  '@your-org/home@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@ionic/react': 8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@your-org/ui': 0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@your-org/mfe-products@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/types@0.1.1)(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@your-org/products@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@your-org/types@0.1.1)(@your-org/ui@0.1.1(@ionic/react@8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@ionic/react': 8.8.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@your-org/types': 0.1.1
