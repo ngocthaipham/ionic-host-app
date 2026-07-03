@@ -11,7 +11,10 @@
     "preview": "vite preview",
     "lint": "tsc --noEmit",
     "bootstrap": "cd ../ionic-mfe-turbo && pnpm install && pnpm publish:local && cd ../my-ionic-app && pnpm install",
-    "sync": "cd ../ionic-mfe-turbo && pnpm publish:local && cd ../my-ionic-app && pnpm install"
+    "sync": "cd ../ionic-mfe-turbo && pnpm publish:local && cd ../my-ionic-app && pnpm install",
+    "deps:status": "node scripts/deps-mode.mjs status",
+    "deps:registry": "node scripts/deps-mode.mjs registry && pnpm install",
+    "deps:workspace": "node scripts/deps-mode.mjs workspace && pnpm install"
   },
   "dependencies": {
     "@ionic/react": "^8.5.0",

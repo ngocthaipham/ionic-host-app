@@ -28,6 +28,9 @@ my-ionic-app/         ← you are here (demo consumer)
 
 | Command | Description |
 |---------|-------------|
+| `pnpm deps:status` | Show registry vs workspace link mode |
+| `pnpm deps:registry` | Use semver `@your-org/core` from Verdaccio |
+| `pnpm deps:workspace` | Link `file:../ionic-mfe-turbo/...` for local dev |
 | `pnpm bootstrap` | Install + build + publish monorepo, then install demo deps from Verdaccio |
 | `pnpm sync` | Re-publish monorepo + reinstall demo deps (after editing `@your-org/*`) |
 | `pnpm dev` | Start demo app on port 3000 |

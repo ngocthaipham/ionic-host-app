@@ -140,7 +140,28 @@ pnpm dev
 
 ---
 
-## Customize
+## Dependency mode (registry vs workspace)
+
+Switch how `@your-org/*` packages are linked:
+
+| Command | Mode | Use when |
+|---------|------|----------|
+| `pnpm deps:status` | show current | — |
+| `pnpm deps:registry` | semver from Verdaccio (`^0.1.4`) | production-like / after `publish:local` |
+| `pnpm deps:workspace` | `file:../ionic-mfe-turbo/...` | fast local dev on monorepo source |
+
+```bash
+# Work on ionic-mfe-turbo source without publishing each change
+pnpm deps:workspace
+cd ../ionic-mfe-turbo && pnpm build && cd ../my-ionic-app
+pnpm dev:home
+
+# Back to Verdaccio versions
+pnpm deps:registry
+pnpm sync   # if packages changed
+```
+
+---
 
 | What | Where |
 |------|-------|
